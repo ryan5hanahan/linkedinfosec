@@ -12,26 +12,24 @@ python3 -m http.server 8080 --directory public
 Open [localhost:8080](http://localhost:8080/). Python serves the files as-is.
 Cloudflare applies `_headers` and the custom 404 page on deployment.
 
-## Deploy with GitHub and Cloudflare Pages
+## Deploy with GitHub and Cloudflare Workers
 
-Commit this directory's contents to the root of a GitHub repository. Connect
-the repository to a Cloudflare Pages project via **Workers & Pages**.
+The repository is connected to a Cloudflare Worker named `linkedinfosec`
+that serves `public/` as static assets. `wrangler.jsonc` at the repository
+root holds the configuration, including the custom 404 page.
 
-| Cloudflare Pages setting | Value |
+| Cloudflare Workers build setting | Value |
 | --- | --- |
 | Production branch | `main` |
-| Root directory | Repository root |
-| Framework preset | None |
+| Root directory | `/` (repository root) |
 | Build command | Leave blank |
-| Build output directory | `public` |
+| Deploy command | `npx wrangler deploy` |
 
-Check the preview hostname and confirm the website's email link before
-adding `linkedinfosec.com` under **Custom domains**. For an apex domain,
-the zone must be on Cloudflare in the same account as the Pages project.
-Review existing DNS records during cutover, including any mail records.
+Custom domains are attached under the Worker's **Settings → Domains & Routes**.
+Cloudflare creates the DNS records and certificates for each hostname added.
 
-[Cloudflare Git integration](https://developers.cloudflare.com/pages/get-started/git-integration/) ·
-[Custom domains](https://developers.cloudflare.com/pages/configuration/custom-domains/)
+[Workers static assets](https://developers.cloudflare.com/workers/static-assets/) ·
+[Custom domains](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/)
 
 ## Before publication
 
