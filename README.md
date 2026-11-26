@@ -35,8 +35,8 @@ Review existing DNS records during cutover, including any mail records.
 
 ## Before publication
 
-- Create or confirm `hello@linkedinfosec.com`, or change the `mailto:` in
-  `public/index.html`. The site uses an email link and has no form backend.
+- The contact form posts to Formspree (endpoint in `public/index.html`).
+  Confirm the form's notification address in the Formspree dashboard.
 - The landscape is the illustrative Puget Sound image from the Cascade Line
   brand kit. The ridgeline mark and favicon are the approved brand exports.
 

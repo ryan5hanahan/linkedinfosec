@@ -178,6 +178,25 @@ nav a:hover, .footer-domain:hover { text-decoration: underline; text-underline-o
 .contact h2 { text-wrap: initial; }
 .contact p:not(.eyebrow) { max-width: 35rem; margin-top: 1.05rem; }
 .contact .button:focus-visible, .contact .text-link:focus-visible { outline-color: var(--paper); }
+.contact-form { margin-top: 1.6rem; max-width: 36rem; }
+.contact-form label { display: block; font: 600 .72rem/1.4 var(--mono); letter-spacing: .065em; text-transform: uppercase; color: #b9c8be; }
+.contact-form .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.contact-form input, .contact-form textarea {
+  display: block;
+  width: 100%;
+  margin: .4rem 0 1.1rem;
+  padding: .7rem .8rem;
+  border: 1px solid #799187;
+  border-radius: 0;
+  background: var(--deep);
+  color: var(--paper);
+  font: 1rem/1.5 var(--sans);
+}
+.contact-form input:focus-visible, .contact-form textarea:focus-visible { outline: 3px solid var(--cedar); outline-offset: 2px; }
+.contact-form textarea { resize: vertical; }
+.contact-form .button { border: 0; cursor: pointer; font-family: inherit; }
+.contact-form .hero-actions { margin-top: .4rem; }
+.gotcha { position: absolute; left: -9999px; }
 .contact-aside { border-left: 1px solid #799187; padding-left: 1.85rem; padding-bottom: .2rem; }
 .contact-aside p { font: 500 .77rem/1.7 var(--mono); letter-spacing: .02em; margin-top: 1rem; }
 
@@ -197,6 +216,7 @@ nav a:hover, .footer-domain:hover { text-decoration: underline; text-underline-o
   .section-intro h2 { text-wrap: initial; }
   .partner { gap: 1.5rem; }
   .contact-inner { grid-template-columns: 1fr; align-items: start; }
+  .contact-form .field-row { grid-template-columns: 1fr; gap: 0; }
   .contact-aside { border-left: 0; border-top: 1px solid #799187; padding: 1.25rem 0 0; }
   .contact-aside img { width: 54px; height: auto; }
 }

@@ -174,10 +174,18 @@
           <p class="eyebrow"><span aria-hidden="true"></span> Get in touch</p>
           <h2 id="contact-heading">Tell me what you’re working on.</h2>
           <p>Share what you need help with and your timeline. I reply personally, usually within a business day, and I’ll tell you plainly if I’m not the right fit.</p>
-          <div class="hero-actions">
-            <a class="button" href="mailto:hello@linkedinfosec.com">Email Ryan <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="https://www.linkedin.com/in/ryan-shanahan" rel="me noopener">LinkedIn <span aria-hidden="true">↗</span></a>
-          </div>
+          <form class="contact-form" action="https://formspree.io/f/mbgowwow" method="POST">
+            <div class="field-row">
+              <label>Name <input type="text" name="name" autocomplete="name" required></label>
+              <label>Email <input type="email" name="email" autocomplete="email" required></label>
+            </div>
+            <label>What are you working on? <textarea name="message" rows="5" required></textarea></label>
+            <input type="text" name="_gotcha" class="gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="hero-actions">
+              <button class="button" type="submit">Send message <span aria-hidden="true">↗</span></button>
+              <a class="text-link" href="https://www.linkedin.com/in/ryan-shanahan" rel="me noopener">Or find me on LinkedIn <span aria-hidden="true">↗</span></a>
+            </div>
+          </form>
         </div>
         <div class="contact-aside">
           <img src="assets/cascade-reversed.png" alt="" width="80" height="46" loading="lazy">
