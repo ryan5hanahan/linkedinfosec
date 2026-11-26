@@ -164,6 +164,8 @@ nav a:hover, .footer-domain:hover { text-decoration: underline; text-underline-o
 .plain-list li { padding-block: .55rem; border-top: 1px solid var(--line-dark); font-size: .95rem; }
 .plain-list li:first-child { border-top: 0; padding-top: 0; }
 .plain-list strong { display: block; color: var(--paper); font-weight: 650; }
+.memberships { grid-column: 2; }
+.memberships li { padding-block: .3rem; }
 .credentials-band a { color: var(--paper); text-underline-offset: .22em; }
 .timeline h3 a { text-decoration-color: var(--cedar); text-underline-offset: .18em; }
 
@@ -212,6 +214,7 @@ nav a:hover, .footer-domain:hover { text-decoration: underline; text-underline-o
 @media (max-width: 900px) {
   .wrap { width: calc(100% - 2.75rem); }
   .section-layout, .experience, .credentials-layout { grid-template-columns: 1fr; }
+  .memberships { grid-column: auto; }
   .section-layout .section-intro { position: static; }
   .section-intro h2 { text-wrap: initial; }
   .partner { gap: 1.5rem; }
