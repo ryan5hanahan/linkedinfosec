@@ -38,6 +38,31 @@ Cloudflare creates the DNS records and certificates for each hostname added.
 - The landscape is the illustrative Puget Sound image from the Cascade Line
   brand kit. The ridgeline mark and favicon are the approved brand exports.
 
+## Writing
+
+Posts are Markdown files in `posts/`, named `YYYY-MM-DD-slug.md`, with a
+frontmatter block:
+
+```
+---
+title: Post title
+date: 2026-11-27
+summary: One or two sentences shown in lists and search results.
+linkedin: Optional caption used in the RSS feed description for cross-posting.
+---
+```
+
+Add `draft: true` to keep a post out of the build. Then run:
+
+```sh
+python3 -m venv .venv && .venv/bin/pip install markdown   # once
+.venv/bin/python build.py
+```
+
+The script writes `public/blog/`, the RSS feed at `public/blog/feed.xml`,
+and the latest-posts list on the home page. Commit the generated files with
+the post; Cloudflare serves them as-is with no build step.
+
 ## Editing
 
 - `public/index.html` contains all landing-page copy.

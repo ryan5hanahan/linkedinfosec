@@ -151,6 +151,32 @@ nav a:hover, .footer-domain:hover { text-decoration: underline; text-underline-o
 .when { font: 500 .76rem/1.9 var(--mono); letter-spacing: .04em; color: var(--cedar); text-transform: uppercase; }
 .timeline div p { margin-top: .55rem; }
 
+/* Writing */
+.latest { padding-block: clamp(3rem, 6vw, 5.5rem); display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(2rem, 6vw, 6.25rem); border-top: 1px solid var(--line); }
+.post-list li { display: grid; grid-template-columns: 8.5rem 1fr; gap: .5rem 1.5rem; border-top: 1px solid var(--line); padding-block: 1.5rem 1.8rem; }
+.post-list li:first-child { border-top: 0; padding-top: 0; }
+.post-list time { font: 500 .76rem/1.9 var(--mono); letter-spacing: .04em; color: var(--cedar); text-transform: uppercase; }
+.post-list h3 a { text-decoration: none; }
+.post-list h3 a:hover { text-decoration: underline; text-underline-offset: .22em; }
+.post-list p { margin-top: .45rem; }
+.page { padding-block: clamp(3rem, 6vw, 5.5rem); }
+.post, .post-index .lede, .post-index .post-list { max-width: 44rem; }
+.post-index .post-list { margin-top: 2.5rem; }
+.post h1 { font-size: clamp(2.4rem, 4.6vw, 4rem); }
+.prose { margin-top: 2rem; font-size: 1.08rem; }
+.prose > * + * { margin-top: 1.1em; }
+.prose h2 { font-size: clamp(1.5rem, 2.4vw, 2rem); margin-top: 2.2em; }
+.prose h3 { margin-top: 1.8em; }
+.prose a { color: var(--evergreen); text-underline-offset: .2em; }
+.prose ul, .prose ol { padding-left: 1.3rem; list-style: revert; }
+.prose li + li { margin-top: .4em; }
+.prose blockquote { margin: 1.4em 0; padding-left: 1.2rem; border-left: 3px solid var(--cedar); color: var(--slate); }
+.prose code { font: .9em var(--mono); background: var(--mist); padding: .1em .35em; }
+.prose pre { background: var(--mist); padding: 1rem 1.2rem; overflow-x: auto; border-left: 3px solid var(--cedar); }
+.prose pre code { background: none; padding: 0; }
+.prose hr { border: 0; border-top: 1px solid var(--line); }
+.post-back { margin-top: 3rem; }
+
 /* Credentials */
 .credentials-band { background: var(--deep); color: var(--mist); }
 .credentials-layout { display: grid; grid-template-columns: 1.1fr 1fr 1.2fr; gap: 2.5rem clamp(2rem, 4vw, 4rem); padding-block: clamp(3rem, 6vw, 5rem); align-items: start; }
@@ -215,7 +241,7 @@ nav a:hover, .footer-domain:hover { text-decoration: underline; text-underline-o
 
 @media (max-width: 900px) {
   .wrap { width: calc(100% - 2.75rem); }
-  .section-layout, .experience, .credentials-layout { grid-template-columns: 1fr; }
+  .section-layout, .experience, .latest, .credentials-layout { grid-template-columns: 1fr; }
   .memberships { grid-column: auto; }
   .section-layout .section-intro { position: static; }
   .section-intro h2 { text-wrap: initial; }
@@ -235,7 +261,7 @@ nav a:hover, .footer-domain:hover { text-decoration: underline; text-underline-o
   .proof > div { border-left: 0; border-top: 1px solid var(--line-dark); }
   .proof > div:first-child { border-top: 0; }
   .services-list li { grid-template-columns: 2.2rem 1fr; }
-  .timeline li { grid-template-columns: 1fr; gap: .25rem; }
+  .timeline li, .post-list li { grid-template-columns: 1fr; gap: .25rem; }
   .partner { grid-template-columns: 1fr; }
   .footer-inner { display: grid; align-content: center; gap: .5rem; padding-block: 1rem; }
 }

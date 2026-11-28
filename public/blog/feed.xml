@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+<title>Linked Information Security</title>
+<link>https://www.linkedinfosec.com/blog/</link>
+<description>Writing from Ryan Shanahan on security leadership for lean organizations.</description>
+<language>en-us</language>
+<atom:link href="https://www.linkedinfosec.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<lastBuildDate>Sat, 28 Nov 2026 01:13:33 +0000</lastBuildDate>
+<item>
+<title>What this site is for</title>
+<link>https://www.linkedinfosec.com/blog/what-this-site-is-for/</link>
+<guid isPermaLink="true">https://www.linkedinfosec.com/blog/what-this-site-is-for/</guid>
+<pubDate>Fri, 27 Nov 2026 16:00:00 +0000</pubDate>
+<description>I&#x27;ve put up a site for my consulting practice, Linked Information Security. Here&#x27;s a short note on what it&#x27;s for and what I plan to write about.</description>
+<content:encoded><![CDATA[<p>After twenty-five years in technology, most of it making security and IT work for organizations that couldn't justify a full team, I've set up Linked Information Security as the home for that work.</p>
+<p>The short version of what I do: fractional security leadership for lean organizations. Audit readiness for SOC 2 and HIPAA. Incident readiness, and guiding the response when something happens. Getting an application ready for a proper penetration test. Keeping a small AWS footprint secure. The <a href="/#services">services section</a> has the details.</p>
+<p>What I plan to write here is the kind of thing I find myself explaining on calls. How to get through a first SOC 2 audit without drowning in it. What a lean company actually needs from incident response. Why persuasive design belongs in a threat model. Short pieces, written to be useful, published when I have something worth saying rather than on a schedule.</p>
+<p>Posts also go to <a href="https://www.linkedin.com/in/ryan-shanahan">LinkedIn</a>, and there's an <a href="/blog/feed.xml">RSS feed</a> if you prefer that.</p>]]></content:encoded>
+</item>
+</channel>
+</rss>
